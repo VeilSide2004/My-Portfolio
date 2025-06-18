@@ -78,8 +78,10 @@ const StarBackground = () => {
                         left: meteor.x + "%",
                         top: meteor.y + "%",
                         opacity: 0.8,
-                        animationDelay: meteor.delay + "s",
+                        animationDelay: `-${meteor.delay}s`,  // 👈 negative delay
                         animationDuration: meteor.animationDuration + "s",
+                        animationIterationCount: "infinite",
+                        animationTimingFunction: "linear",
                     }}
                 />
             ))}
