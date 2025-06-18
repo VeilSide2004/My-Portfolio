@@ -1,3 +1,5 @@
+import Hero from "../components/Hero";
+import Navbar from "../components/Navbar";
 import StarBackground from "../components/StarBackground";
 import ThemeToggle from "../components/ThemeToggle"
 
@@ -8,8 +10,16 @@ const Home = () => {
             {/* Theme toggle complete */}
             <ThemeToggle/>
 
-            {/* the star background */}
+            {/* the star and meteor background */}
             <StarBackground/>
+
+            {/* this is the navbar */}
+            <Navbar/>
+
+            {/* the main content */}
+            <main>
+                <Hero/>
+            </main>
         </div>
     );
 };
