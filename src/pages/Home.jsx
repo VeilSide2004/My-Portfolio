@@ -1,5 +1,7 @@
+import About from "../components/About";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
+import Skills from "../components/Skills";
 import StarBackground from "../components/StarBackground";
 import ThemeToggle from "../components/ThemeToggle"
 
@@ -10,14 +12,17 @@ const Home = () => {
             {/* Theme toggle complete */}
             <ThemeToggle/>
 
-            {/* the star background */}
+            {/* the star and meteor background */}
             <StarBackground/>
-             {/* this is the navbar */}
+
+            {/* this is the navbar */}
             <Navbar/>
 
             {/* the main content */}
             <main>
                 <Hero/>
+                <About/>
+                <Skills/>
             </main>
         </div>
     );
