@@ -12,7 +12,7 @@ const Hero = () => {
                         <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">Mondal</span>
                     </h1>
                     <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                        I am a passionate web developer focused on frontend development. I have solid skills in HTML and CSS, and I am currently learning JavaScript and React JS to build dynamic, interactive websites. Though I am still growing and gaining expertise, I am committed to continuous learning and excited to take on new challenges. I enjoy creating clean, responsive, and user-friendly interfaces that bring designs to life.
+                        I am passionate about frontend development and UI/UX design. I love crafting clean, interactive, and visually appealing user experiences, and I’m driven by a constant curiosity to grow and improve.
                     </p>
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">
