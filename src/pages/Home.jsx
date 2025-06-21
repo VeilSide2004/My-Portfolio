@@ -1,6 +1,9 @@
 import About from "../components/About";
+import Certificates from "../components/Certificates";
+import Contact from "../components/Contact";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
+import Project from "../components/Project";
 import Skills from "../components/Skills";
 import StarBackground from "../components/StarBackground";
 import ThemeToggle from "../components/ThemeToggle"
@@ -23,6 +26,9 @@ const Home = () => {
                 <Hero/>
                 <About/>
                 <Skills/>
+                <Project/>
+                <Certificates/>
+                <Contact/>
             </main>
         </div>
     );
