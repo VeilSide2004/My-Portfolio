@@ -1,5 +1,6 @@
-import { Facebook, Github, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Facebook, Github, Instagram, Linkedin, Mail, MapPin, Phone, Send } from 'lucide-react';
 import React from 'react';
+import { cn } from './../lib/Utils';
 
 const Contact = () => {
     return (
@@ -77,18 +78,62 @@ const Contact = () => {
                                 Connect with Me
                             </h4>
                             <div className="flex space-x-4 justify-center">
-                                <a href="https://www.linkedin.com/in/aranya-mondal-b2a40524b/" target="_blank" className="text-">
-                                    <Linkedin/>
+                                <a href="https://www.linkedin.com/in/aranya-mondal-b2a40524b/" target="_blank" className="text-muted foreground hover:text-primary">
+                                    <Linkedin />
                                 </a>
-                                <a href="https://www.instagram.com/veil_side_1234/" target="_blank">
-                                    <Instagram/>
+                                <a href="https://www.instagram.com/veil_side_1234/" target="_blank"
+                                    className="text-muted foreground hover:text-primary">
+                                    <Instagram />
                                 </a>
-                                <a href="https://github.com/VeilSide2004" target="_blank">
-                                    <Github/>
+                                <a href="https://github.com/VeilSide2004" target="_blank"
+                                    className="text-muted foreground hover:text-primary">
+                                    <Github />
                                 </a>
                             </div>
 
                         </div>
+                    </div>
+
+                    <div className="bg-card p-8 rounded-lg shadow-xs">
+                        <h3 className="text-2xl font-semibold mb-6"> Send me a message </h3>
+                        <form className="space-x-6">
+                            <div>
+                                <label htmlFor="name"
+                                    className="block text-sm font-medium mb-2">
+                                    Your Name
+                                </label>
+                                <input type="text" id="name" name="name" required
+                                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
+                                    placeholder="Your name....." />
+                            </div>
+
+                            <div>
+                                <label htmlFor="email"
+                                    className="block text-sm font-medium mb-2">
+                                    Email
+                                </label>
+                                <input type="email" id="email" name="email" required
+                                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
+                                    placeholder="xyz@gmail.com.." />
+                            </div>
+
+                            <div>
+                                <label htmlFor="message"
+                                    className="block text-sm font-medium mb-2">
+                                    Message
+                                </label>
+                                <textarea id="message" name="message" required
+                                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
+                                    placeholder="Write here...." />
+                            </div>
+
+                            <button type="submit" className={cn("cosmic-button w-full flex items-center justify-center gap-2")}>
+                                Send me
+                                <Send size={16}/>
+                                
+                            </button>
+                        </form>
+
                     </div>
 
                 </div>
